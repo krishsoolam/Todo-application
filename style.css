@@ -1,0 +1,121 @@
+
+
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Protest Revolution', sans-serif;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 2rem 0;
+    align-items: baseline;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 1rem;
+    padding: 1rem;
+ 
+
+}
+
+#listcontainer {
+    border-radius: 1rem;
+    
+}
+
+
+.input {
+    color: #8707ff;
+    border: 1px dashed black;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    width: 250px;
+    margin: 0 1rem 0 0;
+}
+
+.input:active {
+    box-shadow: 2px 2px 15px #8707ff inset;
+}
+
+.button {
+    background-color: #1a1a1a;
+    color: white;
+    border: 0;
+    border-radius: 0.3rem;
+    padding: 0.6rem 0.5rem 0.5rem 0.6rem;
+}
+
+.button:hover {
+    scale: 1.1;
+    transition: ease-in-out 0.3s;
+}
+
+.ulstyle {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 0;
+}
+
+.listyle {
+    display: grid;
+    grid-template-columns: 1.5rem auto 4rem;
+    grid-template-rows: auto;
+    align-items: center;
+
+    margin: 0 0 0.5rem 0;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    border-radius: 1rem;
+
+}
+
+.checkBoxStyle {
+    grid-column: 1/2;
+    cursor: pointer;
+    scale: 1;
+
+}
+
+.p{
+    font-size: 1.35rem;
+    font-family: 'Poor Story', system-ui;
+    grid-column: auto;
+    padding: 0.5rem;
+    display: flex;
+    justify-content:center;
+    font-weight: 600;
+    
+}
+
+.delstylebtn {
+    grid-column: auto;
+    background-color: blueviolet;
+    color: white;
+    border: 0;
+    border-radius: 0.2rem;
+    padding: 5px 0 5px 0;
+    width: 3rem;
+    scale: 1.2;
+
+}
+
+.delstylebtn:hover {
+    scale: 1;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+@media (min-width: 500px) {
+    #listcontainer {
+        width: 70vw;
+        margin: auto;
+        
+    }
+
+}
+
+@media (max-width: 300px){
+    .input{
+        width:120px;
+    }
+}
